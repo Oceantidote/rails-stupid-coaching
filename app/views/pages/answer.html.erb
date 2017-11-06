@@ -1,5 +1,16 @@
-<h1>Your sage advice form the coach is:</h1>
+<div class="left_margin">
+  <h1>Stupid Coaching</h1>
 
-<h3><%= @question %></h3>
-<p><%= @answer %></p>
-<%= link_to "Ask a new question", ask_path %>
+  <div class="response_container">
+    <div class="message">
+      <p class="left_margin"><%= @question %></p>
+      <p class="left_margin">-You</p>
+    </div>
+    <div class="response">
+      <p class="left_margin"><strong><%= @answer %>!</strong></p>
+      <p class="left_margin">-Coach</p>
+    </div>
+  </div>
+
+  <%= link_to "Ask a new question", ask_path %>
+</div>

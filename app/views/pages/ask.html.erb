@@ -1,5 +1,23 @@
-<h1>Ask your stupid Coach a question</h1>
-<form action="/answer">
-  <input type="text" name="question">
-  <input type="submit">
-</form>
+<div class="container">
+  <div class="row">
+        <div class="control-group" id="fields">
+            <h1>Stupid Coaching</h1>
+            <p>Ask your coach anything:</p>
+            <div class="controls">
+                <form action="/answer" role="form" autocomplete="off">
+                    <div class="entry input-group col-xs-3">
+                        <input class="form-control guess" name="question" type="text" placeholder="Type something" />
+                      <span class="input-group-btn">
+                            <button class="btn btn-primary btn-add" type="submit">
+                                <span>Submit</span>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            <br>
+            </div>
+        </div>
+  </div>
+</div>
+
+
